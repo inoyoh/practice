@@ -1,0 +1,30 @@
+.tab{
+  list-style:none;
+}
+.cf{
+  clear : both;
+  overflow : hidden;  // なぜかclear : bothだけでは効かないため。
+}
+.tab1, .tab2, .tab3 {
+  float : left;
+  background : #ccc;
+  padding : 5px 25px;
+  margin-right : 1px;
+}
+
+.tab_current {
+  background : #eee;
+}
+.contents {
+  list-style:none;
+}
+
+.content1, .content2, .content3 {
+  display : none;
+  background : #eee;
+  padding : 20px;
+}
+
+.content_current {
+  display : block;
+}
