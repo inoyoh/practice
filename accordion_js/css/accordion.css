@@ -1,0 +1,15 @@
+.panel{
+  width : 800px;
+}
+.panel__title {
+  border-bottom : 1px solid #ffffff;
+  background : #000000;
+  color : white;
+  padding : 10px;
+  font-weight : bold;
+}
+.panel__content {
+  border : 1px solid #eee;
+  margin : 0px;
+  padding : 10px;
+}
