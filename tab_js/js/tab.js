@@ -6,9 +6,9 @@ $(function() {
     //クリックされたタブの番号をindexに格納。
 		var index = $('.tab li').index(this);
     //コンテンツを一旦全て非表示に。
-		$('.contents li').css('display','none');
+		$('.content li').css('display','none');
     // クリックされた番号のタブを表示。
-		$('.contents li').eq(index).css('display','block');
+		$('.content li').eq(index).css('display','block');
 
 
     // 〜〜タブについての処理〜〜
