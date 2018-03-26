@@ -1,0 +1,35 @@
+@keyframes mask_fadeIn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+  }
+  45% {
+    transform: none;
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: none;
+    transform-origin: 100% 0;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+  }
+}
+
+.is-fadeIn {
+  position: relative;
+  overflow: hidden;
+}
+
+.is-fadeIn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  transform: scaleX(0);
+  animation: mask_fadeIn 1.0s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
